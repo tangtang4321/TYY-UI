@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "stylelint-config-prettier-scss",
+    "stylelint-config-standard-scss"
+  ],
+
+  "rules": {
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["mixin", "include", "extend", "import"]
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["*.html", "**/*.html", "*.vue", "**/*.vue"],
+      "customSyntax": "postcss-html"
+    }
+  ]
+}
