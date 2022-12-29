@@ -1,16 +1,21 @@
 {
   "name": "tyy-ui",
-  "version": "1.0.0",
-  "description": "tyy-ui 有关框架",
-  "main": "lib/index.js",
+  "version": "0.0.26",
+  "description": "组件库搭建测试",
+  "type": "module",
+  "files": [
+    "lib",
+    "dist",
+    "es",
+    "types",
+    "theme-chunck"
+  ],
+  "main": "./lib/index.js",
+  "module": "./es/index.mjs",
+  "types": "./types/index.d.ts",
+  "unpkg": "./dist/index.min.js",
   "dependencies": {
-    "vue": "^3.2.45",
-    "vitepress": "^1.0.0-alpha.33"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "@arco-design/web-vue": "^2.39.1",
+    "vue": "^3.2.25"
+  }
 }

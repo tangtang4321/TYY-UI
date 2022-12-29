@@ -48,20 +48,26 @@ import vue from "@vitejs/plugin-vue";
 import Components from 'unplugin-vue-components/vite'
 export default defineConfig({
   //...
-  plugins: [vue(),Components(
-    {
+  plugins: [
+    vue(),
+    Components({
       resolvers: [
         (componentName) => {
           // where `componentName` is always CapitalCase
-          if (componentName.startsWith('Tyy'))
-            return { name: componentName, from: 'tyy-ui',sideEffects: 'tyy-ui/style' }
-        }
+          if (componentName.startsWith("Tyy"))
+            return {
+              name: componentName,
+              from: "tyy-ui",
+              sideEffects: ["tyy-ui/theme-chunck/index.css"],
+            };
+        },
       ],
       // generate `components.d.ts` global declarations
-      // 默认为true，生成的文件在根目录下，对于引入的依赖volar类型提示还是会有问题，把它放到src下可解决
-      dts: "./src/components.d.ts",
-    }
-  )],
+      // dts默认为true，自动生成文件components.d.ts 生成的文件在根目录下，
+      // 但对于引入的依赖volar类型提示还是会有问题，可把该文件放到src下
+      dts: true,
+    }),
+  ],
 })
 ```
 
