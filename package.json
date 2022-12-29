@@ -8,8 +8,14 @@
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "stylelint": "stylelint **/*.{html,vue,css,sass,scss} --fix --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix ",
+    "stylelint": "stylelint **/*.{html,vue,css,sass,scss} --fix ",
+    "type-check:lib": "vue-tsc -p packages/components && node build/copy.js",
+    "build-lib:umd": "vite build -c build/vite.config.mts --mode umd",
+    "build-lib:cjs": "vite build -c build/vite.config.mts --mode cjs",
+    "build-lib:es": "vite build -c build/vite.config.mts --mode es",
+    "build-lib:css": "vite build -c build/css.config.mts",
+    "build:lib": "run-p type-check:lib build-lib:umd build-lib:cjs build-lib:es build-lib:css"
   },
   "husky": {
     "hooks": {

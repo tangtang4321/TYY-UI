@@ -17,6 +17,9 @@ coverage
 /cypress/videos/
 /cypress/screenshots/
 
+/tyy-ui/*
+!/tyy-ui/package.json
+!/tyy-ui/README.md
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

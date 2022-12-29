@@ -1,6 +1,6 @@
 import { createApp } from "vue";
 import "@/packages/theme-chunck/index";
-import TyyUi from "/packages/components/index.ts";
+import TyyUi from "@/packages/components/index";
 (async () => {
   const apps = import.meta.glob("./src/*.vue");
   const name = location.pathname.replace(/^\//, "") || "App";
@@ -9,7 +9,7 @@ import TyyUi from "/packages/components/index.ts";
     location.pathname = "App";
     return;
   }
-  const App = (await file()).default;
+  const App = ((await file()) as any).default;
   const app = createApp(App);
   app.use(TyyUi);
   app.mount("#app");

@@ -1,0 +1,14 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.node.json",
+  "include": [
+    "vite.config.*",
+    "vitest.config.*",
+    "cypress.config.*",
+    "playwright.config.*",
+    "build"
+  ],
+  "compilerOptions": {
+    "composite": true, // Referenced projects 需要打开这个配置。来确保TypeScript可以快速确定在哪里找到引用项目的输出。
+    "types": ["node"] // 默认情况下，所有可见的“@types”包都包含在编译中。如果指定该值，只有指定的会包含在编译中。 指定["node"]，则只有./node_modules/@types/node
+  }
+}

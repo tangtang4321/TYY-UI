@@ -1,23 +1,17 @@
 {
-  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "extends": "./tsconfig.base.json",
   "include": [
     "env.d.ts",
+    "commitlint.config.ts",
     "examples/**/*",
     "examples/**/*.vue",
     "packages/**/*",
     "packages/**/*.vue"
   ],
 
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["examples/*"]
-    }
-  },
-
   "references": [
     {
-      "path": "./tsconfig.config.json"
+      "path": "./tsconfig.node.json"
     }
   ]
 }

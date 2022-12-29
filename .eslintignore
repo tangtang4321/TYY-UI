@@ -1,0 +1,8 @@
+.husky
+node_modules
+tyy-ui
+docs
+dist
+build
+stats.html
+packages/components.d.ts

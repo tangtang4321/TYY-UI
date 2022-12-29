@@ -12,6 +12,6 @@ export default defineConfig({
       "@/packages": fileURLToPath(new URL("./packages", import.meta.url)),
       "@/public": fileURLToPath(new URL("./public", import.meta.url)),
     },
-    extensions: [".ts", ".json", ".js", ".sass", ".scss", ".css"],
+    extensions: [".ts", ".mts", ".json", ".js", ".sass", ".scss", ".css"],
   },
 });

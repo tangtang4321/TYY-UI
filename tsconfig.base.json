@@ -1,0 +1,14 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "esnext", // 就是你的TypeScript文件中的module，采用何种方式实现
+    "target": "es2018", // typeScript文件编译后生成的javascript文件里的语法应该遵循哪个JavaScript的版本
+    "isolatedModules": true, // 隔离模块，esbuild是独立编译每个文件的，所以它们无法分辨导入的名称是类型还是值。 因此，如果你在esbuild中使用TypeScript，你应该启用isolatedModules TypeScript配置选项。
+    "paths": {
+      // 别名在构建工具中配置了一次，在typescript还需要配置一次
+      "@/examples/*": ["examples/*"],
+      "@/packages/*": ["packages/*"]
+    }
+  }
+}

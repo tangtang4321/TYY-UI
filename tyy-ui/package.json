@@ -1,0 +1,16 @@
+{
+  "name": "tyy-ui",
+  "version": "1.0.0",
+  "description": "tyy-ui 有关框架",
+  "main": "lib/index.js",
+  "dependencies": {
+    "vue": "^3.2.45",
+    "vitepress": "^1.0.0-alpha.33"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
