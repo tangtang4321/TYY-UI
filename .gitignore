@@ -17,6 +17,7 @@ coverage
 /cypress/videos/
 /cypress/screenshots/
 
+/stats.html
 /tyy-ui/*
 !/tyy-ui/package.json
 !/tyy-ui/README.md

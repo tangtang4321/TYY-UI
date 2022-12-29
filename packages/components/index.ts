@@ -1,5 +1,7 @@
-import Button from "./button";
-const components = [Button];
+import TyyButton from "./button";
+
+export { TyyButton };
+const components = [TyyButton];
 const install = function (Vue: any) {
   components.forEach((component) => {
     Vue.use(component);
@@ -7,5 +9,4 @@ const install = function (Vue: any) {
 };
 export default {
   install,
-  ...components,
 };
