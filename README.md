@@ -1,30 +1,5 @@
-## Project Setup
+## tyy-ui
 
-```sh
-npm install
-```
+### docs
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
-
-### learn about
-
-pnpm
-sass
-stylelint
-vite
+[参考](https://juejin.cn/post/7164276166084263972#heading-16)
