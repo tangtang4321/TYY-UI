@@ -1,6 +1,7 @@
 import { defineConfig } from "vitepress";
 import demoblock from "vitepress-demoblock";
 export default defineConfig({
+  base: "/tyy-ui-doc/",
   title: "tyy-ui",
   description: "玩一玩组件库搭建",
   themeConfig: {
