@@ -34,5 +34,6 @@ jobs:
     steps:
       - name: deploy docs to tyy-ui-doc
         run: |
-          echo('log')
+          ls
+          pwd
           sh ../../deploy.sh
