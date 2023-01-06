@@ -293,4 +293,12 @@ export default defineConfig({
 - 坑 2.自动生成目录失效
   在配置文件里配置，[参考](https://juejin.cn/post/7164276166084263972)
 
+- doc 插件[vitepress-demoblock](https://1006008051.github.io/vitepress-demoblock/)
+  tips:<demo src="../.."></demo> src 只能是相对路径
+  坑：在 pnpm 下会有路径问题，目前只能修改依赖包的源码
+  ```
+  //demo.vue
+  const modules = import.meta.glob("../../../../../**/*.vue");
+  ```
+
 ## pnpm 多工程

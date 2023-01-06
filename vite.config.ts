@@ -14,4 +14,7 @@ export default defineConfig({
     },
     extensions: [".ts", ".mts", ".json", ".js", ".sass", ".scss", ".css"],
   },
+  define: {
+    "process.env": process.env,
+  },
 });

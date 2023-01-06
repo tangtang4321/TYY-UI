@@ -6,7 +6,13 @@ layout: doc
 
 ## 有关框架
 
-vue + arco-design
+vue3 + arco-design + typescript + vite
+
+## 安装
+
+```
+pnpm add tyy-ui --save
+```
 
 ## 快速开始
 
