@@ -1,23 +1,23 @@
 {
-  "hash": "c0604af0",
-  "browserHash": "f19b26d2",
+  "hash": "6a9be210",
+  "browserHash": "2ef3a0f5",
   "optimized": {
     "vue": {
-      "src": "../../../../node_modules/.pnpm/vue@3.2.45/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "src": "../../../../node_modules/_vue@3.2.45@vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "faff52e3",
+      "fileHash": "40b75368",
       "needsInterop": false
     },
     "tyy-ui/es/index": {
-      "src": "../../../../node_modules/.pnpm/tyy-ui@0.0.26/node_modules/tyy-ui/es/index.mjs",
+      "src": "../../../../node_modules/_tyy-ui@0.0.26@tyy-ui/es/index.mjs",
       "file": "tyy-ui_es_index.js",
-      "fileHash": "025c260e",
+      "fileHash": "7590d936",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-LOYTW5GM": {
-      "file": "chunk-LOYTW5GM.js"
+    "chunk-APJZUCFJ": {
+      "file": "chunk-APJZUCFJ.js"
     }
   }
 }
