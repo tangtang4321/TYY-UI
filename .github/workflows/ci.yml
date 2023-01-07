@@ -14,6 +14,8 @@ jobs:
       - name: Install and Build
         run: |
           npm install
+          cd node_modules
+          ls 
           npm run docs:build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
