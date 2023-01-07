@@ -296,9 +296,14 @@ export default defineConfig({
 - doc 插件[vitepress-demoblock](https://1006008051.github.io/vitepress-demoblock/)
   tips:<demo src="../.."></demo> src 只能是相对路径
   坑：在 pnpm 下会有路径问题，目前只能修改依赖包的源码
+
   ```
   //demo.vue
   const modules = import.meta.glob("../../../../../**/*.vue");
   ```
+
+- 部署，github 持续集成
+  actions 配置，[参考](https://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html)
+  tips:记得根据部署路径修改 vitepress/config.js 的 base 配置,[参考](https://vitejs.cn/vitepress/guide/deploy.html#github-pages)
 
 ## pnpm 多工程
