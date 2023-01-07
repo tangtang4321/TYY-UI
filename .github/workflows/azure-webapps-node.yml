@@ -32,4 +32,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: deploy docs to tyy-ui-doc
-        run: sh -c ../../deploy.sh
+        run: sh deploy.sh
