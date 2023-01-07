@@ -30,9 +30,7 @@ jobs:
     permissions:
       contents: none
     runs-on: ubuntu-latest
-
     steps:
       - name: deploy docs to tyy-ui-doc
-        run: |
-         
-          run: sh -c ./deploy.sh
+        run: |         
+          run: sh ./deploy.sh
