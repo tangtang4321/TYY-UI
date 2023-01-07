@@ -294,16 +294,24 @@ export default defineConfig({
   在配置文件里配置，[参考](https://juejin.cn/post/7164276166084263972)
 
 - doc 插件[vitepress-demoblock](https://1006008051.github.io/vitepress-demoblock/)
-  tips:<demo src="../.."></demo> src 只能是相对路径
-  坑：在 pnpm 下会有路径问题，目前只能修改依赖包的源码
+
+  1. tips:<demo src="../.."></demo> src 只能是相对路径，相对当前.md 文件
+  2. 坑：在 pnpm 下会有路径问题？目前只能修改依赖包的源码，获取换成 npm
 
   ```
   //demo.vue
   const modules = import.meta.glob("../../../../../**/*.vue");
   ```
 
-- 部署，github 持续集成
-  actions 配置，[参考](https://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html)
-  tips:记得根据部署路径修改 vitepress/config.js 的 base 配置,[参考](https://vitejs.cn/vitepress/guide/deploy.html#github-pages)
+- 部署,[参考](https://vitejs.cn/vitepress/guide/deploy.html#github-pages)
+
+  1. tips:通过 git bash 执行 deploy.sh 脚本：sh deploy.sh
+
+- github 持续集成
+
+  1. actions 配置，[参考](https://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html)
+  2. 坑：github 持续集成的构建结果跟本地构建结果有出入，导致组件无法显示？暂时放弃
+
+- algolia 搜索
 
 ## pnpm 多工程

@@ -9,7 +9,7 @@ hero:
     - text: 快速开始
       link: /components/quickstart.html
     - text: 在GitHub查看
-      link: https://github.com
+      link: https://github.com/tangtang4321/TYY-UI
       theme: alt
 features:
   - title: 组件库基于vue3 + arco-design + typescript + vite

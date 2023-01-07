@@ -6,7 +6,9 @@ export default defineConfig({
   description: "玩一玩组件库搭建",
   themeConfig: {
     logo: "/images/logo.jpg",
-    socialLinks: [{ icon: "github", link: "https://github.com" }],
+    socialLinks: [
+      { icon: "github", link: "https://github.com/tangtang4321/TYY-UI" },
+    ],
     docFooter: { prev: "上一篇", next: "下一篇" },
     lastUpdatedText: "最近更新时间",
     algolia: {
