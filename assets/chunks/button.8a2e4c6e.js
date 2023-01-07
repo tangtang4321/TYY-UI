@@ -1,0 +1,1 @@
+import{g as t,o as e,f as a,w as o,d as r,u as s,B as n}from"../app.7a09bf25.js";const f=t({__name:"button",setup(c){return(u,p)=>(e(),a(s(n),{type:"primary",class:"tyy-button"},{default:o(()=>[r("Primary")]),_:1}))}});export{f as default};
