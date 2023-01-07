@@ -31,5 +31,8 @@ jobs:
       contents: none
     runs-on: ubuntu-latest
     steps:
+      - name: chmod deploy.sh
+        run: chmod u+x deploy.sh
+  
       - name: deploy docs to tyy-ui-doc
         run: sh deploy.sh
