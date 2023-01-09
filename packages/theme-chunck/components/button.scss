@@ -1,9 +1,16 @@
+@import "@arco-design/web-vue/es/button/style/token";
 @import "@arco-design/web-vue/es/button/style/index";
 @import "../base";
 
-.tyy-button {
-  width: 200px;
-  height: 40px;
-  color: $color-white;
-  background: $color-primary;
-}
+// .tyy-button {
+//   &.arco-btn-dashed,
+//   &.arco-btn-primary,
+//   &.arco-btn-secondary,
+//   &.arco-btn-text,
+//   &.arco-btn-outline {
+//     width: 200px;
+//     height: 40px;
+//     color: $color-white;
+//     background: $color-primary;
+//   }
+// }
