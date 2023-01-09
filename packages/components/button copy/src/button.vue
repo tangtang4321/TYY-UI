@@ -1,10 +1,10 @@
 <template>
   <a-button :type="aType" class="tyy-button" :class="'tyy-ui-button-' + type">
-    <template #icon v-if="$slots.icon">
+    <template #icon>
       <slot name="icon"></slot>
     </template>
-    <template #default v-else>
-      <slot name="default"> </slot>
+    <template #default>
+      <slot name="default"></slot>
     </template>
   </a-button>
 </template>

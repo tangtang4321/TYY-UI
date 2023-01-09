@@ -4,7 +4,10 @@ export default defineConfig({
   base: "/TYY-UI/",
   title: "tyy-ui",
   description: "玩一玩组件库搭建",
+  // port: "9999",
+  // dest: "./dist",
   themeConfig: {
+    // docsDir: "docs",
     logo: "/images/logo.jpg",
     socialLinks: [
       { icon: "github", link: "https://github.com/tangtang4321/TYY-UI" },

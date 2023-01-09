@@ -76,16 +76,22 @@ vue-cli + arco-design + typescript + vite + vitepress
 
    - 坑 1：sass 文件报分号错误？
      解决：把文件改成 scss 格式
-   - 坑 2：html,vue 文件里报样式 Syntax 语法错误
+   - 坑 2：html,vue 文件里报样式 Syntax 语法错误；less 文件报同样错误
      解决：stylelint 配置文件 overrides 里增加配置：
 
      ```.stylelintrc.json
      {
       // ...
-      overrides:{
-        "files": ["*.html", "**/*.html", "*.vue", "**/*.vue"],
-        "customSyntax": "postcss-html"
+      "overrides": [
+        {
+          "files": ["*.html", "**/*.html", "*.vue", "**/*.vue"],
+          "customSyntax": "postcss-html"
+        },
+        {
+          "files": ["*.less", "**/*.less"],
+          "customSyntax": "postcss-less"
         }
+      ]
      }
 
      ```

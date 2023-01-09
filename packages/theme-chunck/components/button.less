@@ -1,0 +1,27 @@
+@import "@arco-design/web-vue/es/button/style/index.less";
+@import "../base";
+
+.tyy-button {
+  &.tyy-ui-button-plain {
+    // width: 200px;
+    // height: 40px;
+    color: @color-info;
+    border: 1px solid #e6e6ed;
+    background: none;
+    &:hover {
+      color: @color-primary;
+      border: 1px solid @color-primary;
+      background: none;
+    }
+  }
+  &.tyy-ui-button-plainText {
+    // width: 200px;
+    // height: 40px;
+    color: @color-info;
+    background: none;
+    &:hover {
+      color: @color-info;
+      background-color: var(--color-fill-2);
+    }
+  }
+}

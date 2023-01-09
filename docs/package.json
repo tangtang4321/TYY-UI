@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "dev": "vitepress dev docs ",
+    "build": "vitepress build docs ",
+    "serve": "vitepress serve docs "
+  },
+  "dependencies": {
+    "examples": "workspace:^",
+    "packages": "workspace:^"
+  },
+  "devDependencies": {
+    "@algolia/client-search": "^4.14.3",
+    "vitepress": "1.0.0-alpha.35",
+    "vitepress-demoblock": "^1.0.4"
+  }
+}
