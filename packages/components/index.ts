@@ -1,7 +1,8 @@
 import TyyButton from "./button";
-
-export { TyyButton };
-const components = [TyyButton];
+import TyySpace from "./space";
+import TyyTableLayout from "./table-layout";
+export { TyyButton, TyySpace, TyyTableLayout };
+const components = [TyyButton, TyySpace, TyyTableLayout];
 const install = function (Vue: any) {
   components.forEach((component) => {
     Vue.use(component);

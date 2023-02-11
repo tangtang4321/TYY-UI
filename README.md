@@ -321,3 +321,5 @@ export default defineConfig({
 - algolia 搜索
 
 ## pnpm 多工程
+
+- docs 打包路径会有问题？

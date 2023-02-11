@@ -1,17 +1,23 @@
 {
-  "hash": "bada9b25",
-  "browserHash": "16830d01",
+  "hash": "7c346c74",
+  "browserHash": "6eae4f2a",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/.pnpm/vue@3.2.45/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "6cb82a30",
+      "fileHash": "a36fcdcc",
       "needsInterop": false
     },
     "tyy-ui/es/index": {
-      "src": "../../../../node_modules/.pnpm/tyy-ui@0.0.26/node_modules/tyy-ui/es/index.mjs",
+      "src": "../../../node_modules/.pnpm/tyy-ui@0.0.27/node_modules/tyy-ui/es/index.mjs",
       "file": "tyy-ui_es_index.js",
-      "fileHash": "1a3e0333",
+      "fileHash": "241cd45a",
+      "needsInterop": false
+    },
+    "@arco-design/web-vue/es/icon": {
+      "src": "../../../../node_modules/.pnpm/@arco-design+web-vue@2.41.1_vue@3.2.45/node_modules/@arco-design/web-vue/es/icon/index.js",
+      "file": "@arco-design_web-vue_es_icon.js",
+      "fileHash": "906228e0",
       "needsInterop": false
     }
   },

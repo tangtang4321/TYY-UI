@@ -5,7 +5,8 @@
     "vitest.config.*",
     "cypress.config.*",
     "playwright.config.*",
-    "build"
+    "build",
+    "config-center.*"
   ],
   "compilerOptions": {
     "composite": true, // Referenced projects 需要打开这个配置。来确保TypeScript可以快速确定在哪里找到引用项目的输出。

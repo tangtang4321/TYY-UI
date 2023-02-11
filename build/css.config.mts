@@ -3,7 +3,7 @@ import { fileURLToPath, URL } from "node:url";
 import { defineConfig } from "vite";
 import { resolve } from "path";
 import glob from "fast-glob";
-const files = await glob("**/*.{scss,sass,css}", {
+const files = await glob("**/*.{less,css}", {
   cwd: resolve(__dirname, `../packages`),
   absolute: true,
   onlyFiles: true,
@@ -15,7 +15,7 @@ export default defineConfig({
         new URL("../packages/theme-chunck", import.meta.url)
       ),
     },
-    extensions: [".scss", ".sass", ".css"],
+    extensions: [".less", ".css"],
   },
 
   build: {
